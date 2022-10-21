@@ -1,0 +1,87 @@
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+#include<malloc.h>
+void insert(int data , int priority);
+void del();
+void display();
+using namespace std;
+struct Node{
+	int priority;
+	int info;
+	int data;
+	struct Node*link;
+};
+Node*front=NULL;
+int main(void){
+	system("clear");
+	int choice,data,priority;
+	do{
+		cout<<"\n****MENU****";
+		cout<<"\n\n INSERT";
+	    cout<<"\n\n DELETE";
+	    cout<<"\n\n DISPLAY";
+	    cout<<"\n\n EXIT";
+	    cout<<"\n\n Enter Your choice";
+	    cin>>choice;
+	    switch(choice){
+	    	case 1:
+	    		cout<<"Enter data which is to be added in queue:";
+	    		cin>>data;
+	    		cout<<"Enter it's Priority:";
+	    		cin>>priority;
+	    		insert(data,priority);
+	    		break;
+	    	case 2:
+	    		del();
+	    		break;
+	    	case 3:
+	    		display();
+	    		break;
+	    	}
+	    }
+	    while(choice!=4);
+	}
+	void insert(int data, int priority){
+		struct Node*temp,*q;
+		temp=(struct Node*)malloc(sizeof(struct Node));
+		temp->info=data;
+		temp->priority=priority;
+		if(front==NULL||priority<front->priority){
+			temp->link=front;
+			front=temp;
+		}
+		else{
+			q=front;
+			while(q->link!=NULL && q->link->priority<=priority)
+			      q=q->link;
+			      temp->link=q->link;
+			       q->link=temp;
+			}
+		}
+		void del(){
+			struct Node*temp;
+			if(front==NULL){
+				printf("QUEUE UNDERFLOW\n");
+			}
+			else{
+				temp=front;
+				printf("deleted item is %d\n",temp->info);
+				front=front->link;
+				free(temp);
+			}
+		}
+		void display(){
+			struct Node*ptr=front;
+			if(front==NULL){
+				printf("Queue is empty\n");
+			}
+			else{
+				printf("Queue Is:\n");
+				printf("Priority                        Item\n");
+				while(ptr!=NULL){
+					printf("%5d                         %5d\n",ptr->priority, ptr->info);
+					ptr=ptr->link;
+				}
+			}
+		}
