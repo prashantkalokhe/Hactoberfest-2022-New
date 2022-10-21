@@ -1,8 +1,9 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int floorSqrt(int x)
 {
+
 	if (x == 0 || x == 1)
 		return x;
 	int st = 1, nd = x / 2, ans;
@@ -20,12 +21,17 @@ int floorSqrt(int x)
 		else
 			nd = mid - 1;
 	}
+
+	float ans = sqrt(x);
+
 	return ans;
 }
 
 int main()
 {
-	int x = 11;
+	int x;
+	cout << "Enter the no. :";
+	cin >> x;
 	cout << floorSqrt(x) << endl;
 	return 0;
 }

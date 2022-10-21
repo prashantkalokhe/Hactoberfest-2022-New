@@ -1,29 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Fibonacci {
-public:
-	int a, b, c;
-	void generate(int);
-};
-
-void Fibonacci::generate(int n)
+long fibonacci(long n)
 {
-	a = 0;
-	b = 1;
-	cout << a << " " << b;
-	for (int i = 1; i <= n - 2; i++) {
-		c = a + b;
-		cout << " " << c;
-		a = b;
-		b = c;
+	if ((n == 1) || (n == 2))
+	{
+		return (n - 1);
+	}
+	else
+	{
+		return (fibonacci(n - 1) + fibonacci(n - 2));
 	}
 }
 
 int main()
 {
-	int n = 9;
-	Fibonacci fib;
-	fib.generate(n);
+	long n;
+	cout << "Enter the size of series you want: ";
+	cin >> n;
+	for (long i = 1; i <= n; i++)
+	{
+		cout << fibonacci(i) << " ";
+	}
 	return 0;
 }

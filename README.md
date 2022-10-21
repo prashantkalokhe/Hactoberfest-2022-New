@@ -1,4 +1,5 @@
 # Hactoberfest-2022-New
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=prashantkalokhe&label=Profile%20views&color=0e75b6&style=flat" alt="prashantkalokhe" /> </p>
 
 
 OPT-IN TO HACKTOBERFEST
