@@ -1,30 +1,31 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void primeFactors(int n)
+void primeFactors(long n)
 {
-	while (n % 2 == 0)
-	{
-		cout << 2 << " ";
-		n = n/2;
-	}
-
-	for (int i = 3; i <= sqrt(n); i = i + 2)
+	vector<long> v;
+	for (long i = 2; i * i <= (n); i++)
 	{
 		while (n % i == 0)
 		{
-			cout << i << " ";
-			n = n/i;
+			v.push_back(i);
+			n /= i;
 		}
 	}
-
-	if (n > 2)
-		cout << n << " ";
+	if (n > 1)
+	{
+		v.push_back(n);
+	}
+	for (long prime : v)
+	{
+		cout << prime << " ";
+	}
 }
 
 int main()
 {
-	int n = 315;
+	long n;
+	cin >> n;
 	primeFactors(n);
 	return 0;
 }
