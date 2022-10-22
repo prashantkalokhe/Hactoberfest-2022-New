@@ -1,0 +1,347 @@
+
+@font-face {
+    font-family: GrotekMed;
+    src: url("../fonts/HKGroteskPro-Medium.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: GrotekReg;
+    src: url("../fonts/HKGroteskPro-Regular.woff2") format("opentype");
+}
+
+@font-face {
+    font-family: GrotekBold;
+    src: url("../fonts/Graphik-Bold.woff2") format("opentype");
+}
+
+.header{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.main-img-illust{}
+
+
+.illust-main{
+    max-width: 35%;
+    margin-bottom: 2rem;
+}
+
+.text-section{
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-heading{
+    font-family: GrotekBold;
+    margin-bottom: 2rem;
+}
+
+.main-para{
+    font-family: GrotekMed;
+    margin-bottom: 2rem;
+}
+
+.about-para{
+   
+        font-family: GrotekMed;
+        margin-bottom: 2rem;
+   
+}
+
+.features_area {
+    padding-bottom:2rem;
+    padding-top: 2rem;
+    font-family: GrotekMed;
+ }
+
+ .features_area a:hover{
+     text-decoration:none;
+ }
+
+
+ .features-heading{
+    font-size: 2rem;
+    font-family: GrotekBold;
+    text-align: center;
+    text-decoration-color:#fff;
+    padding-bottom: 4rem;
+}
+
+  .feature_item
+  {
+    padding: 45px 25px;
+    cursor: pointer;
+    color: var(--font-color);
+    margin-bottom: 30px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    border: 2px solid black;
+    border-radius:5px ;
+  }
+
+    .feature_item img
+    {
+      margin-bottom: 35px;
+    }
+
+    .feature_item h4
+    {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-family: GrotekBold;
+      color: var(--font-color);
+    }
+
+    .feature_item p
+     {
+      margin-bottom: 0px;
+      color: var(--font-color);
+     }
+
+    /* .feature_item:hover
+     {
+      box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+     } */
+
+
+.code-work{
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: GrotekBold;
+    margin-bottom: 2rem;
+}
+
+
+
+.portfolio-code{
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    padding:2rem;
+    /* margin-right: 2rem;
+    margin-bottom: 3rem; */
+}
+
+.project_heading-code{
+font-size:1.2rem;
+font-family: GrotekBold;
+color: var(--font-color);
+margin: 1.3rem;
+}
+
+.code-stuff{
+    font-size:1rem;
+    font-family: GrotekMed;
+margin-left: 1.3rem;
+margin-top: 1.3;
+color: var(--font-color);
+margin-bottom: 1.3rem;
+}
+
+a{
+    color: var(--font-color);
+}
+
+a:hover{text-decoration: none;color: var(--font-color);}
+
+.skills-heading{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration-color: #fff;
+    padding-bottom: 2rem;
+    font-family: GrotekBold;
+}
+
+.just-random-section{
+    margin-top:0rem;
+    padding-top: 5rem;
+}
+
+.just-random-section-2{
+    margin-top:5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.just-random-section-2{
+    margin-top:5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+
+}
+
+.like-form-raised{
+    padding:5rem;
+    border-radius: 1rem;
+}
+
+.heading-random-section{
+    font-family: GrotekBold; 
+}
+
+.para-random-section{
+    font-family: GrotekMed; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.heading-random-section-2{
+    font-family: GrotekBold; 
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.testimonial-section{
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.client-words{
+    max-width: 70%;
+    text-align: center;
+    font-family: GrotekMed; 
+    font-size: 1.23rem;
+    margin:0 auto;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+
+.footer{
+    padding-top:5rem;
+    padding-bottom: 5rem;
+}
+
+.title-heading{
+    font-family: GrotekBold;
+}
+
+.skills-list{
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.skills-list li{
+    margin-bottom:.8rem ;
+}
+
+.main-btn{
+    border:none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    font-family: GrotekBold;
+    color: #fff;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    background-color: #000;
+}
+
+.main-btn-white{
+    border:none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    font-family: GrotekBold;
+    color: #000;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    background-color: #fff;
+}
+
+.main-btn:hover{
+    color: #000;
+    background-color: #fff;
+    border:2px solid #000;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+.main-btn-white:hover{
+    color: #fff;
+    background-color: #0000;
+    border:2px solid #ffff;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.form-control{
+    border:2px solid #000;
+    background-color: #fff;
+}
+
+label{
+    font-family: GrotekBold; 
+}
+
+small{
+    font-family: GrotekMed;
+}
+
+.fit-section{
+    max-width: 80%;
+}
+
+
+.social a i{
+    margin-right: .5rem;
+}
+
+.fa-github {
+    font-size: 2em;
+    color: black;
+}
+
+.fa-instagram {
+    font-size: 2em;
+    color: #cd3479;
+}
+
+.fa-envelope {
+    font-size: 2em;
+    color: #7fe4be;
+}
+
+.about-page{
+    margin-top: 5rem;
+}
+
+.heading-1{
+    font-family: GrotekBold; 
+    margin-bottom: 2rem;
+}
+
+.about-para{
+    font-family: GrotekMed;
+    margin-bottom: 2rem;
+}
+
+.navbar-brand{
+    font-family: GrotekBold; 
+}
