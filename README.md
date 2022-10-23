@@ -67,13 +67,21 @@ DigitalOcean: https://www.digitalocean.com/community/tutorials/what-is-open-sour
 DigitalOcean: https://www.digitalocean.com/community/cheatsheets/how-to-use-git-a-reference-guide
 
 **Thank You**
+
+## REPO STATUS
+
+![GitHub Issues Open](https://img.shields.io/github/issues/prashantkalokhe/Hactoberfest-2022-New?style=for-the-badge&color=green)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/prashantkalokhe/Hactoberfest-2022-New?style=for-the-badge&color=aqua)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/prashantkalokhe/Hactoberfest-2022-New?style=for-the-badge&color=blue)
+![GitHub language count](https://img.shields.io/github/languages/count/prashantkalokhe/Hactoberfest-2022-New?style=for-the-badge&color=brightgreen)
+
 <h1>Contributors :: </h1>
 <br>
 <a href="https://github.com/prashantkalokhe/Hactoberfest-2022-New/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=https://github.com/prashantkalokhe/Hactoberfest-2022-New" />
+  <img src="https://contrib.rocks/image?repo=prashantkalokhe/Hactoberfest-2022-New" />
 </a>
 <h6>Thanks for contributing. It's an amazing experience to collaborate with you all!</h6>
 
 <br>
 
-<img src = "https://github.com/AnanyaDas162/LGMVIP-WEBDEV/blob/main/Images/code.avif" >
+<img src = "https://raw.githubusercontent.com/AnanyaDas162/LGMVIP-WEBDEV/main/Images/code.avif" >
