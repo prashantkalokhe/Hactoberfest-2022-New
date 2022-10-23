@@ -1,0 +1,115 @@
+.cards-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h1 {
+    color: darkblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    background: rgb(25, 30, 77);
+    color: white;
+}
+
+.nav-links {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    color: rgb(190, 209, 15);
+    font-size: 110%;
+}
+
+.card:hover {
+    box-shadow: 0 60px 70px rgba(0, 0, 0, .12), 0 24px 28px rgba(0, 0, 0, .06);
+}
+
+li:hover {
+    color: rgb(42, 219, 71);
+}
+
+.card {
+    display: block;
+    float: left;
+    text-align: left;
+    height: calc(100vh/1.7);
+}
+
+.pagination {
+    color: white !important;
+    background: grey;
+    width: 100%;
+    align-content: center;
+}
+
+.box {
+    padding-top: 3%;
+}
+
+h3 {
+    padding-right: 20%;
+    height: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.page {
+    padding-top: 1%;
+    background-color: grey;
+}
+
+.copy {
+    padding-top: 1%;
+    padding-bottom: 4%;
+    padding-left: 15%;
+    font-size: 75%;
+    text-align: center;
+    background: grey;
+}
+
+.image {
+    height: 30%;
+    width: 30%;
+}
+
+.newsdetails {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: grey;
+    padding-top: 1%;
+    padding-bottom: 12%;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.heading {
+    font-size: clamp(1.4em, 2.1vw, 2.1em);
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        height: calc(100vh/1.1);
+    }
+    .box {
+        padding-left: 3%;
+        padding-right: 2%;
+    }
+    .pagination {
+        height: 5%;
+        width: 100%;
+        margin: 0 -5px;
+    }
+}
