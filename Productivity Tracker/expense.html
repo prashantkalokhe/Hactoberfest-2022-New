@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Expense Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+        <h1>
+            <marquee>Expense Manager</marquee>
+        </h1>
+        <div class="balance-container">
+            <h2>Your Balance</h2>
+            <div id="balance">Rs 1000</div>
+        </div>
+
+        <div class="cashflow-container">
+            <div class="income-container">
+                <h2>Income</h2>
+                <div id="income">Rs 1200</div>
+            </div>
+
+            <div class="expense-container">
+                <h2>Expense</h2>
+                <div id="expense">Rs 200</div>
+            </div>
+        </div>
+
+        <div class="transaction-container">
+            <h2>Transaction History</h2>
+            <ul id="transaction">
+
+            </ul>
+        </div>
+        <div class="form-container">
+            <h2>Add New Transaction</h2>
+            <form onsubmit="return false;">
+                <label for="name">Name</label><br>
+                <input id="name" type="text"><br>
+                <label for="amount">Amount</label><br>
+                <input id="amount" type="number"><br>
+                <button id="incomeBtn">Add Income</button><br>
+                <button id="expenseBtn">Add Expense</button><br>
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="expense.js"></script>
+</body>
+
+</html>

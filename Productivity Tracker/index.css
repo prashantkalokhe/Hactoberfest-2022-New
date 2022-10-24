@@ -1,0 +1,118 @@
+:root {
+    --box-shadow: 0px 1px 4px 1px rgb(129, 127, 214);
+    --income: green;
+    --expense: red;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.balance-container #balance {
+    font-size: 1.5em;
+}
+
+.cashflow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.income-container {
+    border-right: 1px solid rgb(129, 127, 214);
+    padding-right: 20px;
+}
+
+.expense-container {
+    padding-left: 20px;
+}
+
+#income,
+#expense {
+    font-size: 1.3cm;
+}
+
+#income {
+    color: var(--income);
+}
+
+#expense {
+    color: var(--expense);
+}
+
+#transaction {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#transaction li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: var(--box-shadow);
+    margin-right: 10px;
+}
+
+#transaction li .income-amt {
+    display: inline-block;
+    background-color: var(--income);
+    color: beige;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#transaction li .expense-amt {
+    display: inline-block;
+    background-color: var(--expense);
+    color: beige;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#transaction li button {
+    padding: 5px 10px 5px 10px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form label {
+    padding-bottom: 10px;
+}
+
+.form-container form input {
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.form-container form button {
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1cm;
+    text-transform: uppercase;
+}
+
+#incomebtn {
+    background-color: var(--income);
+}
+
+#expensebtn {
+    background-color: var(--expense);
+}
