@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puja Vacation Counter</title>
+    
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url("https://i.postimg.cc/BvktcKDQ/bg2.webp");   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Nunito Sans', sans-serif;
+   
+
+}
+h1{
+    margin-top: 3.5rem;
+   text-align: center;
+    font-size: 4rem;
+    font-weight: 300px;
+    color: aliceblue;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+    margin-bottom: -6rem;
+    padding: 0 5px;
+}
+
+.big-text{
+    font-size: 4.5rem;
+    line-height: 1;
+    margin: 0 2rem;
+    font-weight: bold;
+}
+
+.container{
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 15px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3) ;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.3);
+    color: aliceblue;
+    
+    
+}
+
+.count-el{
+    padding: 5px;
+}
+
+.count-el span{
+    font-size: 1.5rem;
+    font-weight: 300px;
+}
+
+.mirror{
+    position: relative;
+    bottom: 0;
+    min-width: 75%;
+    max-width: 90%;
+   
+
+    height: 60%;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(180, 180, 180, 0.2);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(1px);
+}
+
+
+@media only screen and (max-width: 406px) {
+    .big-text {
+        font-size: 4rem;       
+        margin: 0 1rem;
+       
+    }
+  }
+
+   </style>
+    
+</head>
+<body>
+    <br><br><br><br><br><br><br><br>
+    <div class="mirror">
+        <h1>Days Left</h1>
+            
+        <div class="countdown-container">
+            <div class="count-el days-c">
+                <div class="container">
+                    <p class="big-text" id="days">0</p>
+                    <span>Days</span>
+                </div>         
+            </div>
+
+            <div class="count-el hours-c">
+                <div class="container">
+                    <p class="big-text" id="hours">0</p>
+                    <span>Hours</span>
+                </div>  
+            </div>
+
+            <div class="count-el minutes-c row-1">
+                <div class="container">
+                    <p class="big-text" id="minutes">0</p>
+                    <span>Minutes</span>
+                </div>
+            </div>
+
+            <div class="count-el seconds-c row-2">
+                <div class="container">
+                    <p class="big-text" id="seconds">0</p>
+                    <span>Seconds</span>
+                </div> 
+            </div>
+        </div>  
+    </div>
+
+    
+<script>
+    
+setTimeout( function(){
+    document.getElementById("audio").play();
+    console.log("music on");
+},2000);
+
+const d=document.getElementById("days");
+let h=document.getElementById('hours');
+let m=document.getElementById('minutes');
+let s=document.getElementById('seconds');
+
+
+let durgapuja='20 Oct 2023';
+
+function counter(){
+    let durgaPujaDate=new Date(durgapuja);
+    let currentDate=new Date();
+
+
+    let tSec= (durgaPujaDate-currentDate)/1000;
+    let days= Math.floor(tSec/3600/24);
+    let hour= Math.floor(tSec/3600)%24;
+    let min =((Math.floor(tSec/60))%60);
+    let sec = Math.floor(tSec)%60;
+    //console.log(days,hour,min,sec);
+
+d.innerHTML= timeFormat(days);
+h.innerHTML=timeFormat(hour);
+m.innerHTML=timeFormat(min);
+s.innerHTML=timeFormat(sec);
+
+}
+
+function timeFormat(time){
+    return (time < 10 ? '0' : '')+time;
+}
+
+counter();
+setInterval(counter,1000);
+
+</script>
+
+</body>
+</html>
