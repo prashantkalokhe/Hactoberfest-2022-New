@@ -1,0 +1,26 @@
+/*
+Write a prgram to write following pattern.
+1111
+2222
+3333
+4444
+*/
+#include<bits/stdc++.h>
+using namespace std;
+
+void pattern1(int n)
+{
+   for(int i=0;i<n;i++)
+   {
+      for(int j=0;j<n;j++)
+      {
+         cout<<(i+1);
+      }
+      cout<<endl;
+   }
+}
+int main()
+{
+  cout<<"**********Pattern-1************"<<endl;
+  pattern1(4);
+}
