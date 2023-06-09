@@ -1,0 +1,30 @@
+/*
+Print the following pattern.
+****
+***
+**
+*
+*/
+#include<bits/stdc++.h>
+using namespace std;
+
+void pattern4(int n)
+{
+   for(int row=1;row<=n;row++)
+   {
+      for(int col=1;col<=n;col++)
+      {
+         if(row+col<=n+1)
+         {
+            cout<<"*";
+         }
+      }
+      cout<<endl;
+   }
+}
+
+int main()
+{
+  cout<<"***********Pattern-4************"<<endl;
+  pattern4(4);
+}
